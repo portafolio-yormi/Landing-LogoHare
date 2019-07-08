@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>Home | Prueba</title>
+  <link href="css/main.css?403423a4f8279eff230b" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header class="demo-header">
+      <div class="container">
+        <a class="logo" href="index.html"><img src="static/img/logo.png" alt=""></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products +</a>
+              <ul class="sub-menu">
+                <li><a href="#">Products one</a></li>
+                <li><a href="#">Products Twe</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="slider">
+      <figure>
+        <div class="slide" v-for="image in portafolio" v-if="image.type=='slider'">
+          <p class="caption">{{image.caption}}</p><img :src="image.url"></div>
+      </figure>
+    </div>
+
+    <div class="container">
+      <div class="grid mt-lg">
+        <div class="box">
+          <h2 class="title-lg text-center">Lorem ipsum dolor sit amet</h2>
+          <hr class="separator">
+          <h3 class="title-sm text-center"> Lorem ipsum dolor sit amet</h3>
+          <p class="text-sm text-justify mt-sm"> Lorem ipsum dolor sit amet consectetur adipiscing elit parturient ut, sollicitudin magnis proin felis himenaeos vitae magna aliquet curae, tortor
+            egestas libero odio eu luctus cum quis. Enim cubilia facilisis feugiat et ut habitasse per ultricies rutrum tristique neque, arcu consequat
+            nunc leo imperdiet tempus mollis rhoncus lacinia taciti. Nisl ante iaculis mollis non libero nostra gravida et, habitasse ut facilisis praesent
+            fusce class pellentesque Phasellus integer vivamus faucibus orci convallis vestibulum mattis quam, facilisi lectus pharetra viverra dis cub.</p>
+          <p
+            class="text-center mt-sm"><a class="link" id="link" href="#">You can learn more about the sample here.</a></p>
+        </div>
+        <div class="box"><img class="img i-response" src="static/img/phone.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/bundle.js?403423a4f8279eff230b"></script>
+</body>
+
+</html>
